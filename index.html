@@ -17,8 +17,8 @@
 <body>
     <div class="main-container">
         <header>
+            <img src="/images/logo/Booki.png" alt="logo Booki">
             <nav>
-                <img src="/images/logo/Booki.png" alt="logo Booki">
                 <ul class="navigation">
                     <li><a href="#hebergements">Hébergements</a></li>
                     <li><a href="#activites">Activités</a></li>
@@ -30,13 +30,14 @@
             <p>En plein centre-ville ou en pleine nature</p>
             <div class="recherche">
                 <i></i>
-                <form action="#">
+                <form action="#" method="get">
                     <input type="text" value="Marseille, France">
-                    <button type="submit">Rechercher</button>
+                    <button type="submit" class="desktop-icone">Rechercher</button>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass search-icon-mobile mobile-icone"></i></button>
                 </form>
             </div>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
 
                 </section>
                 <section class="populaires">
@@ -104,6 +105,9 @@
                         </a>
                     </div>
                 </section>
+            </div>
+            <div id="activites" class="activites">
+                blablabla
             </div>
         </main>
         <footer></footer>

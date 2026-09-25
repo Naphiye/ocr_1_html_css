@@ -68,6 +68,14 @@ a {
 }
 
 
+    .mobile-icone{
+        display: none;
+    }
+
+    .desktop-icone{
+        display: block;
+    }
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -174,5 +182,11 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .mobile-icone{
+        display :block;
+    }
+
+    .desktop-icone{
+        display: none;
+    }
 }
