@@ -279,6 +279,8 @@ p{
 
     .main-container{
         padding: 0;
+        gap: 30px;
+
     }
 
     header{
@@ -309,11 +311,19 @@ p{
     
     }
 
-    .info{
-        padding: 0 20px;
+    main{
+        gap: 30px;
     }
 
+    .title{
+        margin: 0 20px;
+
+    }
+    
     .recherche{
+        margin: 0 20px;
+        
+
         button{
             border-radius: 15px;
             overflow: hidden;
