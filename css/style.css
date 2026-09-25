@@ -17,6 +17,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -140,7 +141,7 @@ p{
     button{
         background-color: #0065FC;
         color: #F2F2F2;
-                font-weight: 700;
+        font-weight: 700;
         font-size: 18px;
         border: none;
         border-top-right-radius: 15px;
@@ -326,6 +327,7 @@ p{
     .recherche{
         margin: 0 20px;
         overflow: visible;
+        max-width: 100%;
 
 
         button{
