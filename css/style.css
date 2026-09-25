@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 
 :root {
@@ -23,6 +24,10 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 35px
+
 }
 
 a {
@@ -74,7 +79,6 @@ header{
         display: flex;
         gap: 30px;
         list-style: none;
-        font-size: 16px;
         margin: 0;
         padding: 0;           
 
@@ -91,6 +95,57 @@ header{
         }
     }
 }
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+    margin-bottom:8px;
+}
+
+p{
+    margin: 0;
+}
+
+
+.recherche{
+    display: flex;
+    height: 49px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    .dot-icon{
+        background-color: #F2F2F2;
+        width: 50px;
+        color: black;
+        line-height: 49px;  
+        text-align: center;
+    }
+    input{
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        border: none;
+    }
+    button{
+        background-color: #0065FC;
+        color: #F2F2F2;
+                font-weight: 700;
+        font-size: 18px;
+        border: none;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+}
+
 
 /****** Headers ***********/
 .headers{
@@ -252,6 +307,21 @@ header{
         }
     
     
+    }
+
+    .info{
+        padding: 0 20px;
+    }
+
+    .recherche{
+        button{
+            border-radius: 15px;
+            overflow: hidden;
+             width: 49px;
+            .fa-solid {
+                color: #F2F2F2;
+            }
+        }
     }
 
 
