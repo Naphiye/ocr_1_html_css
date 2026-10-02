@@ -124,10 +124,10 @@ p {
     height: 49px;
     width: fit-content;
     overflow: hidden;
-    border: 2px solid  #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 15px;
     background-color: transparent;
-    
+
     .dot-icon {
         background-color: #F2F2F2;
         width: 50px;
@@ -399,7 +399,7 @@ p {
     .recherche {
         margin: 0 20px;
 
-        
+
 
         button {
             width: 49px;
@@ -415,17 +415,29 @@ p {
     .info {
         margin: 0 20px;
 
+
+    }
+
+    .filtres {
+
+        align-items: stretch;
+
         .all-filter {
-            align-items: flex-start;
+            align-items: stretch;
             flex-direction: column;
         }
 
+
         .button {
-            width: 130px;
+            flex: 1;
             min-width: 0;
+            max-width: 160px;
+            box-sizing: border-box;
+            padding: 10px 15px;
         }
+
     }
-    
+
 
 
 
