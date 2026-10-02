@@ -122,16 +122,20 @@ p {
 .recherche {
     display: flex;
     height: 49px;
+    width: fit-content;
     overflow: hidden;
-
+    border: 2px solid  #F2F2F2;
+    border-radius: 15px;
+    background-color: transparent;
+    
     .dot-icon {
         background-color: #F2F2F2;
         width: 50px;
         color: black;
         line-height: 49px;
         text-align: center;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
+        /* border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px; */
     }
 
     input {
@@ -139,8 +143,8 @@ p {
         font-size: 18px;
         text-align: center;
         border: none;
-        border-top: #F2F2F2 2px solid;
-        border-bottom: #F2F2F2 2px solid;
+        /* border-top: #F2F2F2 2px solid;
+        border-bottom: #F2F2F2 2px solid; */
     }
 
     button {
@@ -149,8 +153,9 @@ p {
         font-weight: 700;
         font-size: 18px;
         border: none;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
+        padding: 10px;
+        /* border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px; */
     }
 
 }
