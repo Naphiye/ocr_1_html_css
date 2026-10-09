@@ -121,6 +121,7 @@ p {
 }
 
 
+
 .recherche {
     display: flex;
     height: 49px;
@@ -367,17 +368,21 @@ p {
 
 .activites-cards a {
     width: 25%;
+    display: flex; 
 }
 
 .activites-cards .card {
     width: 100%;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .activites-cards img {
     width: 100%;
     height: 380px;
     border-radius: 20px 20px 0 0;
+    flex-shrink: 0;
 }
 
 .activites-cards .card-title {
@@ -387,6 +392,9 @@ p {
 
 .activites-cards .card-content {
     padding: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 
