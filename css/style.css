@@ -397,6 +397,9 @@ p {
     align-items: center;
 }
 
+.pos-top{
+    object-position: top;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
