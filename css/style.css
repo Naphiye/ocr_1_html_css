@@ -123,9 +123,10 @@ p {
     display: flex;
     height: 49px;
     width: fit-content;
-    border: 2px solid #F2F2F2;
     border-radius: 15px;
     background-color: transparent;
+            border: #F2F2F2 1px solid;
+
 
     .dot-icon {
         background-color: #F2F2F2;
@@ -133,15 +134,15 @@ p {
         color: black;
         line-height: 49px;
         text-align: center;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 
     input {
         font-weight: 700;
         font-size: 18px;
-        text-align: center;
         border: none;
-        /* border-top: #F2F2F2 2px solid;
-        border-bottom: #F2F2F2 2px solid; */
+        padding: 0 20px;
     }
 
     button {
@@ -151,8 +152,8 @@ p {
         font-size: 18px;
         border: none;
         padding: 10px;
-        /* border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px; */
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px; 
     }
 
 }
@@ -419,18 +420,37 @@ p {
 
     }
 
+    .recherche-wrapper {
+        padding: 0 20px;
+    }
+
     .recherche {
-        margin: 0 20px;
+        display: flex;
+        width: 100%;
+
+        input {
+            width: 100%;
+            min-width: 0;
+        }
 
 
 
         button {
-            width: 49px;
-            border-radius: 0 15px 15px 0;
+            width: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+            z-index: 2;
 
             .fa-solid {
                 color: #F2F2F2;
             }
+
+
+        }
+
+        .dot-icon,
+        button {
+            flex-shrink: 0;
         }
     }
 
