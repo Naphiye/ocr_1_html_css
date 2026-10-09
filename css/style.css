@@ -490,20 +490,39 @@ p {
     .filtres {
 
         align-items: stretch;
-
+        
         .all-filter {
             align-items: stretch;
             flex-direction: column;
         }
-
-
+        
+        
         .button {
             flex: 1;
             min-width: 0;
-            max-width: 160px;
             box-sizing: border-box;
             padding: 10px 15px;
+            justify-content: center;
         }
 
+    }
+
+
+
+    .hebergements-and-populaires section{
+        border-radius: 0;
+    }
+
+    .hebergements-and-populaires
+    {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-cards, .populaires-cards{
+        flex-direction: column;
+    }
+
+    .populaires a{
+        width: 100%;
     }
 }
