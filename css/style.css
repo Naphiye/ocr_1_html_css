@@ -53,6 +53,8 @@ a {
 
 .card-title {
     font-size: 16px;
+    margin: 0;
+
 }
 
 .euro {
@@ -122,10 +124,10 @@ p {
 .recherche {
     display: flex;
     height: 49px;
-    width: fit-content;
+    width: 377px;
     border-radius: 15px;
     background-color: transparent;
-            border: #F2F2F2 1px solid;
+    border: #F2F2F2 1px solid;
 
 
     .dot-icon {
@@ -136,6 +138,7 @@ p {
         text-align: center;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
+        flex-shrink: 0;
     }
 
     input {
@@ -143,6 +146,7 @@ p {
         font-size: 18px;
         border: none;
         padding: 0 20px;
+        min-width: 0;
     }
 
     button {
@@ -151,9 +155,9 @@ p {
         font-weight: 700;
         font-size: 18px;
         border: none;
-        padding: 10px;
+        padding: 0 20px;
         border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px; 
+        border-bottom-right-radius: 15px;
     }
 
 }
@@ -165,7 +169,9 @@ p {
     gap: 15px;
 
     p {
-        font-weight: 600;
+        font-weight: 700;
+        font-size: 18px;
+
     }
 
     .all-filter {
@@ -247,6 +253,11 @@ p {
     width: 65%;
 }
 
+.hebergements a {
+    font-weight: 600;
+    font-size: 18px;
+
+}
 
 .hebergements-cards {
     display: flex;
@@ -264,6 +275,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 4px;
 }
 
 .hebergements-cards img {
@@ -271,6 +283,24 @@ p {
     height: 124px;
     border-radius: 20px 20px 0 0;
 }
+
+ .card-subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 4px;
+
+}
+
+.card-content{
+    padding: 0 15px 8px 15px;
+}
+
+
+.card-title{
+    padding: 8px 0;
+}
+
+
 
 
 /****** Populaires ***********/
@@ -430,7 +460,6 @@ p {
 
         input {
             width: 100%;
-            min-width: 0;
         }
 
 
@@ -440,6 +469,7 @@ p {
             border-radius: 15px;
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
             z-index: 2;
+            flex-shrink: 0;
 
             .fa-solid {
                 color: #F2F2F2;
@@ -448,10 +478,6 @@ p {
 
         }
 
-        .dot-icon,
-        button {
-            flex-shrink: 0;
-        }
     }
 
     .filtres,
@@ -480,10 +506,4 @@ p {
         }
 
     }
-
-
-
-
-
-
 }
