@@ -120,6 +120,8 @@ p {
     margin: 0;
 }
 
+/****** Recherche ***********/
+
 
 
 .recherche {
@@ -163,12 +165,10 @@ p {
 
 }
 
-
 .filtres {
     display: flex;
     align-items: center;
     gap: 15px;
-    height: 50px;
 
     p {
         font-weight: 700;
@@ -293,8 +293,12 @@ p {
 
 }
 
-.card-content {
+.hebergements .card-content {
     padding: 0 15px 8px 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -368,7 +372,7 @@ p {
 
 .activites-cards a {
     width: 25%;
-    display: flex; 
+    display: flex;
 }
 
 .activites-cards .card {
@@ -397,8 +401,35 @@ p {
     align-items: center;
 }
 
-.pos-top{
+.pos-top {
     object-position: top;
+}
+
+
+
+/****** Footer ***********/
+
+
+footer {
+    padding: 0 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.a-propos,
+.nos-hebergements,
+.assistance {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    flex: 1;
+
+    h3{
+        margin: 0;
+    }
 }
 
 
@@ -444,7 +475,6 @@ p {
     }
 
     .activites-cards img {
-        width: 100%;
         height: 200px;
         border-radius: 20px 20px 0 0;
     }
@@ -598,8 +628,13 @@ p {
         flex-direction: column;
     }
 
-    .activites-cards a{
+    .activites-cards a {
         width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 0;
     }
 
 
